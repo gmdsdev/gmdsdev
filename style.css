@@ -13,7 +13,8 @@ body {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
   display: flex;
   flex-direction: column;
