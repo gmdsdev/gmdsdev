@@ -54,6 +54,11 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    margin: 1rem 0;
+    line-height: 1;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
