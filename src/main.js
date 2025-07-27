@@ -1,3 +1,7 @@
+import "./style.css";
+import { injectSpeedInsights } from "@vercel/speed-insights";
+import { inject as injectAnalytics } from "@vercel/analytics";
+
 const backgroundColors = [
   "#CDBAF3",
   "#F8D7FC",
@@ -15,3 +19,6 @@ window.addEventListener("load", () => {
     backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
   body.style.backgroundColor = backgroundColor;
 });
+
+injectSpeedInsights();
+injectAnalytics();
