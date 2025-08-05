@@ -42,6 +42,10 @@ img {
   border: 2px solid #000;
 }
 
+.spacer {
+  flex: 0;
+}
+
 .container {
   width: min(var(--container-width), 100%);
   margin: 0 auto;
