@@ -39,6 +39,13 @@ const classes = computed(() => {
   line-height: 1.25rem;
   border-width: 1px;
   border-style: solid;
+  text-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+  .button {
+    width: 100%;
+  }
 }
 
 .default {

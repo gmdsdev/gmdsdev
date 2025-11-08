@@ -38,8 +38,15 @@ import Button from "@/components/Button.vue";
 }
 
 .buttons {
+  width: 100%;
   display: flex;
   gap: 0.5rem;
   margin-bottom: 12rem;
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+  }
 }
 </style>
