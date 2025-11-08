@@ -1,5 +1,5 @@
 <template>
-  <a :href="href" target="_blank" rel="noopener noreferrer" :class="classes">
+  <a :href="href" :target="target" :rel="rel" :class="classes">
     <slot />
   </a>
 </template>
@@ -9,6 +9,8 @@ const props = withDefaults(
   defineProps<{
     href: string;
     variant?: "default" | "outline";
+    target?: "_blank" | "_self";
+    rel?: string;
   }>(),
   {
     variant: "default",

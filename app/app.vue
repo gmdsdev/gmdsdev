@@ -2,21 +2,41 @@
   <NuxtLayout>
     <NuxtRouteAnnouncer />
 
-    <div :class="$style.content">
-      <Path>~/</Path>
-      <Name>Guilherme Souza</Name>
-      <Title>Frontend Software Engineer from Brazil 🇧🇷</Title>
+    <main>
+      <article
+        :class="$style.content"
+        itemscope
+        itemtype="https://schema.org/Person"
+      >
+        <Path>~/</Path>
+        <Name itemprop="name">Guilherme Souza</Name>
+        <Title itemprop="jobTitle"
+          >Frontend Software Engineer from Brazil 🇧🇷</Title
+        >
 
-      <div :class="$style.buttons">
-        <Button href="mailto:dev.guih@gmail.com">Get in touch</Button>
-        <Button href="https://github.com/gmdsdev" variant="outline"
-          >GitHub</Button
-        >
-        <Button href="https://linkedin.com/in/gmdsdev" variant="outline"
-          >LinkedIn</Button
-        >
-      </div>
-    </div>
+        <nav :class="$style.buttons" aria-label="Contact and social links">
+          <Button href="mailto:dev.guih@gmail.com" aria-label="Send email"
+            >Get in touch</Button
+          >
+          <Button
+            href="https://github.com/gmdsdev"
+            variant="outline"
+            aria-label="Visit GitHub profile"
+            rel="noopener noreferrer"
+            target="_blank"
+            >GitHub</Button
+          >
+          <Button
+            href="https://linkedin.com/in/gmdsdev"
+            variant="outline"
+            aria-label="Visit LinkedIn profile"
+            rel="noopener noreferrer"
+            target="_blank"
+            >LinkedIn</Button
+          >
+        </nav>
+      </article>
+    </main>
   </NuxtLayout>
 </template>
 
