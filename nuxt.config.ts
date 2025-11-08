@@ -27,6 +27,27 @@ export default defineNuxtConfig({
           content:
             "Guilherme Souza is a frontend software engineer from Brazil",
         },
+        {
+          property: "og:image",
+          content: "/ogimage.jpg",
+        },
+        {
+          property: "og:title",
+          content: "Guilherme Souza",
+        },
+        {
+          property: "og:description",
+          content:
+            "Guilherme Souza is a frontend software engineer from Brazil",
+        },
+        {
+          property: "og:image:width",
+          content: "1200",
+        },
+        {
+          property: "og:image:height",
+          content: "630",
+        },
       ],
     },
   },
