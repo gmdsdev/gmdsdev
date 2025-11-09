@@ -9,8 +9,8 @@ export default defineNuxtConfig({
       },
       title: "Guilherme Souza - Frontend Software Engineer",
       link: [
-        // Modern browsers - SVG (preferred for dark mode support)
-        { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+        // Legacy browsers (placed in root by convention)
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         // Fallback for browsers without SVG support
         {
           rel: "icon",
@@ -18,8 +18,8 @@ export default defineNuxtConfig({
           href: "/favicon-96x96.png",
           sizes: "96x96",
         },
-        // Legacy browsers (placed in root by convention)
-        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        // Modern browsers - SVG (preferred for dark mode support)
+        { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
         // iOS/Apple devices
         {
           rel: "apple-touch-icon",
