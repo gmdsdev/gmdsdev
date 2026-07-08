@@ -1,20 +1,14 @@
 {
-  "name": "gmds-dev",
-  "type": "module",
+  "name": "gmdsdev",
+  "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "dependencies": {
-    "@nuxt/eslint": "^1.10.0",
-    "@unhead/vue": "^2.0.19",
-    "eslint": "^9.39.1",
-    "nuxt": "^4.2.1",
-    "vue": "^3.5.22",
-    "vue-router": "^4.6.3"
+  "devDependencies": {
+    "vite": "^8.1.1"
   }
 }
